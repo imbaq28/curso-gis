@@ -56,7 +56,11 @@ new OpenLayers.Control.WMSGetFeatureInfo({
 ```
 popup = new OpenLayers.Popup.FramedCloud(
 	'Popup',
+<<<<<<< HEAD
 	map.getLonLatFromPixel(xy),
+=======
+	map.getLonLatFromPixel(event.xy),
+>>>>>>> c45f9a0498376b9f92cb834f447adb6ae6772537
 	null,
 	event.text,
 	null,
@@ -65,12 +69,15 @@ popup = new OpenLayers.Popup.FramedCloud(
 
 ```
 
+<<<<<<< HEAD
 ### Centrar el mapa utilizando un boundingbox (encuadre) y la función **getCenterLonLat** de la clase Map
 
 ```
 new OpenLayers.Bounds(-x, -y, x, y);
 ```
 
+=======
+>>>>>>> c45f9a0498376b9f92cb834f447adb6ae6772537
 google:
 
        ("Mapa Satelital",{type:google.maps.MapTypeId.TIPYMAP});
@@ -178,6 +185,7 @@ psql -h localhost -U cursouser -d dbcursogis -f /PATH/ARCHIVO/SHAPE/nombreArchiv
 ```
 
 
+<<<<<<< HEAD
 ## Configuraciones adicionales
 
 Ayudaran a mejorar el performance de la aplicación que se vaya a desarrollar
@@ -222,6 +230,11 @@ new OpenLayers.Control.Attribution({
 	template:"<span style='color:darkblue;font-weight:bold;'>Curso GIS - Postgrado en Informática</span>"
 });
 ```
+=======
+
+
+
+>>>>>>> c45f9a0498376b9f92cb834f447adb6ae6772537
 
 
 

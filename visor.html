@@ -32,16 +32,25 @@
 		var init = function(){
 
 			var proyeccion = new OpenLayers.Projection("EPSG:900913"); //EPSG:900913
+<<<<<<< HEAD
 			var proyeccion2 = new OpenLayers.Projection("EPSG:4326");
 			var controlNavegacion = new OpenLayers.Control.Navigation();
 			var controlZoom = new OpenLayers.Control.PanZoomBar(); // Zoom
 			var host = "http://192.168.43.69";
 			OpenLayers.ProxyHost = "/cgi-bin/proxy.cgi?url=";
+=======
+			var controlNavegacion = new OpenLayers.Control.Navigation();
+			var controlZoom = new OpenLayers.Control.PanZoomBar(); // Zoom
+			var host = "http://192.168.43.69";
+>>>>>>> c45f9a0498376b9f92cb834f447adb6ae6772537
 
 			// Propiedades del objeto Map
 			var propiedades = {
 				projection: proyeccion,
+<<<<<<< HEAD
 				displayProjection: proyeccion2,
+=======
+>>>>>>> c45f9a0498376b9f92cb834f447adb6ae6772537
 				units: 'm',
 				controls: [controlNavegacion, controlZoom],
 				numZoomLevels: 21
@@ -132,6 +141,7 @@
 			);
 			map.addLayer(layerJson);
 			layerJson.setVisibility(false);
+<<<<<<< HEAD
 
 			var	controlInfo = new OpenLayers.Control.WMSGetFeatureInfo({
 				queryVisible: true,
@@ -157,6 +167,8 @@
 			controlInfo.activate();
 
 
+=======
+>>>>>>> c45f9a0498376b9f92cb834f447adb6ae6772537
 			// Configuración para mostrar la región de Bolivia
 			// Lon: -64.819336, Lat: -17.379999
 			var LonLat = new OpenLayers.LonLat(-64.819336, -17.379999);
@@ -177,8 +189,11 @@
 		<h2>Visor Simple OpenLayers</h2>
 	</div>
 	<div id="mapa"></div>
+<<<<<<< HEAD
 
 	<div id="informacion"></div>
+=======
+>>>>>>> c45f9a0498376b9f92cb834f447adb6ae6772537
 	
 
 	<hr>
